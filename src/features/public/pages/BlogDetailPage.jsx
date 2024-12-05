@@ -7,7 +7,6 @@ import LatestBlog4 from "../../../assets/blog/latestBlog/blog-4.png";
 import LatestBlog5 from "../../../assets/blog/latestBlog/blog-5.png";
 import LatestBlog6 from "../../../assets/blog/latestBlog/blog-6.png";
 import { easeIn, motion } from "framer-motion";
-
 import ShowDate from "../components/ShowDate";
 import LatestBlogCard from "../components/LatestBlogCard";
 import BlogDeatailFactsLi from "../components/BlogDeatailFactsLi";
