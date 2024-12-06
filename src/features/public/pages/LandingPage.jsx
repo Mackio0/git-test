@@ -76,6 +76,7 @@ const LandingPage = () => {
 
   return <section className={''}>
       <div className="relative">
+
           <div className="w-full">
               <img
                   className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
@@ -110,7 +111,7 @@ const LandingPage = () => {
               </div>
           </div>
           <ContainerComponent
-              className="px-4 md:px-0 py-8 md:absolute md:top-1/2 md:left-0 md:right-0 md:transform md:-translate-y-1/2">
+              className="px-4  py-8 md:absolute md:top-1/2 md:left-0 md:right-0 md:transform md:-translate-y-1/2">
               <div className="md:max-w-3xl">
 
                   <span
@@ -132,7 +133,7 @@ const LandingPage = () => {
                       </Link>
                       <Link to="/courses" className="">
                           <button
-                              className="w-full sm:w-auto border border-para1 px-6 py-3 rounded-lg text-center hover:bg-para1 hover:text-white text-para2 transition-colors duration-300">
+                              className="w-full sm:w-auto border border-para1 px-6 py-3 rounded-lg text-center hover:bg-para1 hover:text-white text-para1 transition-colors duration-300">
                               Our courses
                           </button>
                       </Link>
@@ -143,7 +144,7 @@ const LandingPage = () => {
       <ContainerComponent>
           {/*hero section*/}
 
-          <div className={'mt-[40px] px-4 lg:px-0 space-y-[40px] md:space-y-[80px] lg:space-y-[120px]'}>
+          <div className={'mt-[40px] space-y-[40px] md:space-y-[80px] lg:space-y-[120px] mb-[120px]'}>
 
               {/*categories section*/}
               <div>

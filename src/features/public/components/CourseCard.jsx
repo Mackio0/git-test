@@ -23,7 +23,7 @@ const CourseCard = ({course}) => {
                     </div>
                 </div>
             </div>
-            <div className={'px-2 py-2'}>
+            <div className={'px-4 py-2'}>
                 <div className={'flex items-center justify-between'}>
                      <span
                          className="px-2 py-1 bg-secondary text-white text-xs font-semibold rounded">

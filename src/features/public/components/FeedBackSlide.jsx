@@ -126,17 +126,7 @@ export default function FeedBackSlide() {
                 </button>
             </div>
 
-            <style jsx global>{`
-                .swiper {
-                    overflow: hidden;
-                }
-                .swiper-wrapper {
-                    align-items: stretch;
-                }
-                .swiper-slide {
-                    height: auto;
-                }
-            `}</style>
+            
         </div>
     );
 }

@@ -6,7 +6,7 @@ const tabs = [
     { id: 'general', label: 'General' },
     { id: 'courses', label: 'Courses' },
     { id: 'subscription', label: 'Subscription' },
-    { id: 'pricing', label: 'Pricing & Plan' }
+    { id: 'pricing', label: 'Pricing' }
 ]
 
 const faqsByCategory = {
@@ -89,14 +89,14 @@ const DynamicFAQSection = () => {
     }
 
     return (
-        <ContainerComponent>
+        <section>
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
                 Popular Frequently Asked Questions
             </h2>
 
-           <div className={'max-w-[1000px] mx-auto'}>
+           <div>
                {/* Tabs */}
-               <div className="flex flex-wrap justify-center gap-2 mb-8">
+               <div className="flex justify-center gap-2 mb-8">
                    {tabs.map((tab) => (
                        <button
                            key={tab.id}
@@ -112,7 +112,7 @@ const DynamicFAQSection = () => {
                </div>
 
                {/* FAQ Items */}
-               <div className="space-y-4 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mx-auto">
+               <div className="space-y-4">
                    {faqsByCategory[activeTab].map((faq) => (
                        <div
                            key={faq.id}
@@ -141,7 +141,7 @@ const DynamicFAQSection = () => {
                    ))}
                </div>
            </div>
-        </ContainerComponent>
+        </section>
     )
 }
 
