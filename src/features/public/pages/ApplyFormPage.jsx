@@ -12,7 +12,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { useNavigate } from "react-router-dom";
 import FollowUsOn from "../components/FollowUsOn";
-import Flatpickr from 'react-flatpickr';
 
 const ApplyFormPage = () => {
   const schema = yup.object({

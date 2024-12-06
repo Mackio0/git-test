@@ -132,7 +132,7 @@ const LandingPage = () => {
                       </Link>
                       <Link to="/courses" className="">
                           <button
-                              className="w-full sm:w-auto border border-para1 px-6 py-3 rounded-lg text-center hover:bg-para1 hover:text-white text-para2 transition-colors duration-300">
+                              className="w-full sm:w-auto border border-para1 px-6 py-3 rounded-lg text-center hover:bg-para1 hover:text-white text-heading md:text-para2 transition-colors duration-300">
                               Our courses
                           </button>
                       </Link>

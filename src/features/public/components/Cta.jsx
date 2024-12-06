@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryBtn from "./PrimaryBtn";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaRegClock, FaRegEnvelope } from "react-icons/fa";
-import { MdOutlineLocationOn } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 
 const Cta = () => {
   return (
@@ -44,7 +44,7 @@ const Cta = () => {
           </p>
           <p className="">
             <span className="inline-block align-middle me-2">
-              <MdOutlineLocationOn className="size-5" />
+              <IoLocationOutline className="size-4" />
             </span>
             789 Pine Drive, Apt 3B
           </p>
