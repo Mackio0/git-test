@@ -13,7 +13,7 @@ const FaqPage = () => {
       <section>
          <HeroSection image={faqImg} title={'FAQs'}/>
           <ContainerComponent>
-             <div className={'space-y-[40px] md:space-y-[80px] lg:space-y-[120px] mt-[40px] md:mt-[80px] lg:mt-[120px] px-4  md:px-0'}>
+             <div className={'space-y-[40px] md:space-y-[80px] lg:space-y-[120px] mt-[40px] md:mt-[80px] lg:mt-[120px]'}>
                  <DynamicFAQSection/>
 
                  <div>
