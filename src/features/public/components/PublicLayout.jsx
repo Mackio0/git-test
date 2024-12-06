@@ -7,15 +7,12 @@ import PageLoading from "../../../components/PageLoading";
 const PublicLayout = () => {
   return (
     <main className=" flex flex-col min-h-screen">
-    <ScrollRestoration />
-
+      <ScrollRestoration />
       {/* <Header /> */}
-
-
       <Suspense fallback={<PageLoading />}>
         <Outlet />
       </Suspense>
-      <Footer  /> 
+      {/* <Footer /> */}
     </main>
   );
 };

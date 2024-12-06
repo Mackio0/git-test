@@ -10,10 +10,10 @@ const AboutCard = ({IconDesign,description,title}) => {
                 </div>
 
                 <div className="space-y-2">
-                    <h3 className="text-[16px] md:[20px] font-semibold font-kite text-heading">
+                    <h3 className="text-[16px] md:[20px] font-semibold  text-heading">
                         {title}
                     </h3>
-                    <p className="text-para1 text-[14px] font-hind">
+                    <p className="text-para1 text-[14px]">
                         {description}
                     </p>
                 </div>
