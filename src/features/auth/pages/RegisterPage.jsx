@@ -8,6 +8,9 @@ import IconButton from "../components/IconButton.jsx";
 import Apple from "../../../assets/icons/Apple.svg";
 import Google from "../../../assets/icons/Google.svg";
 import FacebookIcon from "../../../assets/icons/fb.svg";
+import Apple from "../../../assets/icons/Apple.svg";
+import Google from "../../../assets/icons/Google.svg";
+import FacebookIcon from "../../../assets/icons/fb.svg";
 
 const RegisterPage = () => {
   return (
@@ -86,4 +89,5 @@ const RegisterPage = () => {
   );
 };
 
+export default RegisterPage;
 export default RegisterPage;

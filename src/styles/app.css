@@ -24,15 +24,5 @@
 }
 
 .active {
-  @apply font-bold text-primary-500;
-}
-
-.swiper {
-  overflow: hidden;
-}
-.swiper-wrapper {
-  align-items: stretch;
-}
-.swiper-slide {
-  height: auto;
+  @apply font-bold text-primary-500 !important
 }

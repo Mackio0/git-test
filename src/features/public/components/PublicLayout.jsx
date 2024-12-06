@@ -8,11 +8,11 @@ const PublicLayout = () => {
   return (
     <main className=" flex flex-col min-h-screen">
       <ScrollRestoration />
-      {/* <Header /> */}
+      <Header />
       <Suspense fallback={<PageLoading />}>
         <Outlet />
       </Suspense>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function NavigationLinks() {
+function NavigationLinks({closeDropdown}) {
   const links = [
     { text: "Home", path: "/" },
     { text: "About us", path: "/about-us" },
@@ -10,20 +10,21 @@ function NavigationLinks() {
     { text: "Contact us", path: "/contact-us" },
   ];
 
-
   return (
-    <div className="flex align-center gap-10 justify-between">
+    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 whitespace-nowrap">
       {links.map((link, index) => (
-        <NavLink
-          key={index}
-          to={link.path}
-          className={`self-stretch my-auto `}
-          tabIndex="0"
-        >
-          {link.text}
-        </NavLink>
+        <li>
+          <NavLink
+            key={index}
+            to={link.path}
+            className="block py-2 px-3  text-center rounded md:bg-transparent md:text-para1 md:p-0 dark:text-white"
+            onClick={closeDropdown}
+          >
+            {link.text}
+          </NavLink>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

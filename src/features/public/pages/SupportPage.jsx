@@ -28,7 +28,6 @@ const SupportPage = () => {
       </div>
       <SupportCard/>
       <SupportFaq/>
-      <Footer/>
     </div>
   )
 }
