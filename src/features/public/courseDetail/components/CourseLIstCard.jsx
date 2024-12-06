@@ -12,13 +12,13 @@ const CourseLIstCard = ({course}) => {
         alt={course.title}
         className="w-full h-full md:h-[300px]  object-cover"
       />
-      <span className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm">
+      <span className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded text-sm">
         {course.tag}
       </span>
     
     </div>
     
-    <div className="p-5  md:col-span-7 flex flex-col ">
+    <div className="p-5  md:col-span-7 flex flex-col gap-2 ">
       <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
         <div className="flex items-center gap-1">
           <BookOpen className="w-4 h-4 text-secondary" />
@@ -30,12 +30,12 @@ const CourseLIstCard = ({course}) => {
         </div>
       </div>
       <div className='flex flex-row justify-between items-center '>
-        <span className="px-3 py-1 text-sm rounded-full bg-secondary text-white">
+        <span className="px-3 py-1 text-sm rounded bg-secondary text-white">
            Beginner
           </span>
         <button 
           onClick={() => setIsFavorite(!isFavorite)}
-          className=" p-2 rounded-full border-solid border-stone-900 hover:bg-white transition-colors"
+          className=" p-2 rounded border-solid border-stone-900 hover:bg-white transition-colors"
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -75,7 +75,7 @@ const CourseLIstCard = ({course}) => {
       <img 
           src={course.instructorUrl}
           alt={course.instructorUrl}
-          className="w-8 h-8 rounded-full"
+          className="w-8 h-8 rounded"
         />
         <span className="text-sm font-medium">{course.instructor}</span>
       </div>

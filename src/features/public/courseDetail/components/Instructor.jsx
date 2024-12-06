@@ -16,7 +16,7 @@ export default function Instructor() {
 
       {/* Profile Section */}
       <div className="max-w-5xl mx-auto ">
-        <div className="flex items-start gap-[10px] py-3 px-3 rounded-lg">
+        <div className="flex flex-col md:flex-row items-start gap-[10px] py-3 px-3 rounded-lg">
           <div className="w-48 h-48 overflow-hidden flex-shrink-0">
             <img
               src={`${instructor}`}
@@ -30,7 +30,7 @@ export default function Instructor() {
             <p className="text-emerald-400 mb-4">Software Engineer</p>
             
             {/* Social Links */}
-            <div className="flex gap-3 mb-6">
+            <div className="flex gap-3 mb-4">
               {[facebook, instagram, linkedin, twitter].map((social) => (
                 <a
                   key={social}
@@ -79,12 +79,12 @@ export default function Instructor() {
       {/* About Section */}
       <div>
               <h2 className="text-xl font-semibold mb-4">About an instructor</h2>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-700 mb-4">
                 Lily Alcelus is a skilled web developer and JavaScript instructor with over 10 years of industry experiences. 
                 Specializing in JavaScript, HTML, CSS, and popular frameworks like React and Vue, they've worked on projects 
                 for KBZ Known for their clear, supportive teaching style.
               </p>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Lily Alcelus is dedicated to helping beginners gain confidence and practical coding skills through hands-on 
                 lessons and real-world projects.
               </p>

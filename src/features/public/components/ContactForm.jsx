@@ -26,7 +26,7 @@ const ContactForm = ({ handleSubmit, register, errors , reset }) => {
                         onSubmit={handleSubmit(handleContactForm)}
                         className="flex flex-col gap-2 flex-grow"
                     >
-                        <label className=" font-kite" htmlFor="nameForContactForm">
+                        <label className=" " htmlFor="nameForContactForm">
                             Name
                         </label>
 
@@ -37,13 +37,13 @@ const ContactForm = ({ handleSubmit, register, errors , reset }) => {
                             register={register}
                         />
                         {errors.Name && (
-                            <p className=" text-red-500 font-bold italic font-kite text-xs">
+                            <p className=" text-red-500 font-bold italic  text-xs">
                                 {errors.Name.message}
                             </p>
                         )}
                     </div>{" "}
                     <div className="flex flex-col gap-2 flex-grow">
-                        <label className=" font-kite" htmlFor="emailForContactForm">
+                        <label className=" " htmlFor="emailForContactForm">
                             Email
                         </label>
                         <ContactInput
@@ -55,14 +55,14 @@ const ContactForm = ({ handleSubmit, register, errors , reset }) => {
                         />
 
                         {errors.Email && (
-                            <p className=" text-red-500 font-bold italic font-kite text-xs">
+                            <p className=" text-red-500 font-bold italic  text-xs">
                                 {errors.Email.message}
                             </p>
                         )}
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 ">
-                    <label className=" font-kite" htmlFor="phoneForContactForm">
+                    <label className=" " htmlFor="phoneForContactForm">
                         Phone
                     </label>
                     <ContactInput
@@ -74,13 +74,13 @@ const ContactForm = ({ handleSubmit, register, errors , reset }) => {
                     />
 
                     {errors.Phone && (
-                        <p className=" text-red-500 font-bold italic font-kite text-xs">
+                        <p className=" text-red-500 font-bold italic  text-xs">
                             {errors.Phone.message}
                         </p>
                     )}
                 </div>
                 <div className="flex flex-col flex-grow gap-2 ">
-                    <label className=" font-kite" htmlFor="messageForContactForm">
+                    <label className=" " htmlFor="messageForContactForm">
                         Message
                     </label>
                     <textarea
@@ -97,7 +97,7 @@ const ContactForm = ({ handleSubmit, register, errors , reset }) => {
                         id="messageForContactForm"
                     ></textarea>
                     {errors.Message && (
-                        <p className=" text-red-500 font-bold italic font-kite text-xs">
+                        <p className=" text-red-500 font-bold italic  text-xs">
                             {errors.Message.message}
                         </p>
                     )}

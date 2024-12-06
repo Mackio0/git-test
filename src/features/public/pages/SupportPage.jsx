@@ -9,7 +9,7 @@ const SupportPage = () => {
   return (
     <div>
       
-       <div className='flex-col gap-[12px] min-h-[359px] w-full bg-green-200 flex justify-center items-center '>
+       <div className='flex-col p-3 gap-[12px] min-h-[359px] w-full bg-green-200 flex justify-center items-center '>
     <div>
     <h3 className='text-4xl font-bold text-center align-center items-center font-e'>How can we help you?</h3>
     </div>

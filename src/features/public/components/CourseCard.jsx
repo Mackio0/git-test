@@ -30,7 +30,7 @@ const CourseCard = ({course}) => {
                       {course.level}
                     </span>
                     <button
-                        className="p-1.5 rounded-full border border-para2 hover:bg-gray-100 transition-colors duration-200"
+                        className="p-1.5 rounded border border-para2 hover:bg-gray-100 transition-colors duration-200"
                         aria-label="Add to favorites"
                     >
                         <Heart className="w-5 h-5 text-heading"/>
@@ -70,7 +70,7 @@ const CourseCard = ({course}) => {
                             <img
                                 src={course.instructor.avatar}
                                 alt={course.instructor.name}
-                                className="w-10 h-10 rounded-full object-cover mr-4"
+                                className="w-10 h-10 rounded object-cover mr-4"
                             />
                             <div>
                                 <p className="text-sm font-medium text-gray-900">{course.instructor.name}</p>

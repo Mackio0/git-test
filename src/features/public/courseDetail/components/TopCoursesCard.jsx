@@ -10,10 +10,10 @@ function TopC({ course }) {
         <img 
           src={course.image} 
           alt={course.title}
-          className="w-full h-48 object-fill"
+          className="w-full h-48 object-cover object-top"
         />
         <div className="absolute top-4 left-4 flex gap-2">
-          <span className="px-3 py-1 text-sm rounded-full bg-primary-500 text-white">
+          <span className="px-3 py-1 text-sm rounded bg-primary-500 text-white">
             {course.category}
           </span>
           
@@ -23,12 +23,12 @@ function TopC({ course }) {
       </div>
       <div className="p-4 space-y-4 flex flex-col h-fit">
       <div className='flex flex-row justify-between items-center '>
-        <span className="px-3 py-1 text-sm rounded-full bg-secondary text-white">
+        <span className="px-3 py-1 text-sm rounded bg-secondary text-white">
             {course.level}
           </span>
         <button 
           onClick={() => setIsFavorite(!isFavorite)}
-          className=" p-2 rounded-full bg-stone-200 hover:bg-white transition-colors"
+          className=" p-2 rounded bg-stone-200 hover:bg-white transition-colors"
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -78,7 +78,7 @@ function TopC({ course }) {
             <img
               src={course.instructor.avatar}
               alt={course.instructor.name}
-              className="w-8 h-8 rounded-full object-fit object-center"
+              className="w-8 h-8 rounded object-fit object-center"
             />
             <span className="font-medium">{course.instructor.name}</span>
           </div>

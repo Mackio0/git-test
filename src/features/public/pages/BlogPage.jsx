@@ -45,7 +45,7 @@ const BlogPage = () => {
   };
 
   return (
-    <main className="flex flex-col gap-10 sm:gap-20 lg:gap-section-spacing sm:mb-20 mb-10 lg:mb-32 ">
+    <main className="flex flex-col gap-10 sm:gap-[20px] lg:gap-[50px] sm:mb-20 mb-10 lg:mb-32 ">
       <LandingSection name="Blog" imgPath={hero} />
       <h2 className="  font-semibold text-heading sm:text-4xl text-2xl self-center ">
         {" "}
@@ -53,7 +53,7 @@ const BlogPage = () => {
       </h2>
 
       <ContainerComponent
-        className={"flex flex-col gpa-10 sm:gap-20  lg:gap-section-spacing"}
+        className={"flex flex-col gpa-10 sm:gap-20  "}
       >
         <motion.div
           variants={container}

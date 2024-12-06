@@ -19,7 +19,7 @@ const TabButton = ({ children, isActive, onClick }) => (
 )
 
 const Badge = ({ children, variant = "default" }) => {
-  const baseClasses = "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium"
+  const baseClasses = "inline-flex items-center rounded px-2.5 py-0.5 text-xs font-medium"
   const variantClasses = {
     default: "bg-blue-100 text-blue-800",
     secondary: "bg-gray-100 text-gray-800",
