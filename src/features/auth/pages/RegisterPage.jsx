@@ -1,13 +1,8 @@
 import Logo from "../../../components/Logo.jsx";
-import ContainerComponent from "../../../components/ContainerComponent.jsx";
-import registerImg from "../../../assets/login-signup-applyForm/SignUp.svg";
 import { Link } from "react-router-dom";
 import Input from "../../../components/Input.jsx";
 import PrimaryBtn from "../../public/components/PrimaryBtn.jsx";
 import IconButton from "../components/IconButton.jsx";
-import Apple from "../../../assets/icons/Apple.svg";
-import Google from "../../../assets/icons/Google.svg";
-import FacebookIcon from "../../../assets/icons/fb.svg";
 import Apple from "../../../assets/icons/Apple.svg";
 import Google from "../../../assets/icons/Google.svg";
 import FacebookIcon from "../../../assets/icons/fb.svg";
@@ -19,9 +14,9 @@ const RegisterPage = () => {
         <div className=" space-y-[40px]">
           {/* logo */}
           <div className={"text-center"}>
-            <div className={""}>
+            <Link to={"/"}>
               <Logo className={"h-[70px] w-[70px] mx-auto"} />
-            </div>
+            </Link>
             <h1 className={"text-3xl font-bold mb-1.5 text-headingPrimary"}>
               Create an account
             </h1>
@@ -90,4 +85,3 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
-
