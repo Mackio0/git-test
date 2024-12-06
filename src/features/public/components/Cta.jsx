@@ -9,7 +9,7 @@ const Cta = () => {
     <div className="bg-cta bg-auto rounded-lg -mt-[180px] h-[290px] lg:h-80 w-full">
       <div className="w-full h-full flex flex-col lg:flex-row justify-around lg:justify-between items-center px-5 lg:px-10">
         <div className="w-full">
-          <h1 className="text-[25px] lg:text-h2 font-bold text-heroPara mb-3">
+          <h1 className="text-[30px] lg:text-h2 font-bold text-heroPara mb-3">
             Join our newsletter
           </h1>
           <div className="relative">
@@ -44,7 +44,7 @@ const Cta = () => {
           </p>
           <p className="">
             <span className="inline-block align-middle me-2">
-              <MdOutlineLocationOn className="size-4" />
+              <MdOutlineLocationOn className="size-5" />
             </span>
             789 Pine Drive, Apt 3B
           </p>

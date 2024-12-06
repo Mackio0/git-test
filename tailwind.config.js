@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["sans-serif"],
+        sans: ["Epilogue", "sans-serif"],
         hind: ["Hind", "sans-serif"],
         kite: ["Kite One", "sans-serif"],
       },
@@ -59,6 +59,9 @@ export default {
       spacing: {
         "section-spacing": "120px", // use as className="mb-section-spacing" or "mt-section-spacing"
       },
+      borderRadius: {
+        DEFAULT: '6px',
+      }
     },
   },
   plugins: [require("flowbite/plugin")],

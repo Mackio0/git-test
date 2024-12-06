@@ -42,7 +42,7 @@ const AboutUsPage = () => {
   return (
       <section className="flex flex-col min-h-screen">
           {/* hero section */}
-          <div className="relative w-full h-[300px] sm:h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover">
               <img
                   src={aboutImg}
                   alt="About Us Hero"

@@ -1,12 +1,13 @@
 import { lazy } from "react";
+const CourseListPage = lazy(() => import("../features/public/courseDetail/Pages/CourseListPage"));
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
   import("../features/public/pages/ContactUsPage")
 );
 const LandingPage = lazy(() => import("../features/public/pages/LandingPage"));
-const CourseListPage = lazy(() =>
-  import("../features/public/pages/CourseListPage")
-);
+// const CourseListPage = lazy(() =>
+//   import("../features/public/pages/CourseListPage")
+// );
 const CourseDetailPage = lazy(() =>
   import("../features/public/courseDetail/Pages/CourseDetailPage")
 );

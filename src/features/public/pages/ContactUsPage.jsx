@@ -32,84 +32,33 @@ const ContactUsPage = () => {
       <LandingSection name="Contact us" imgPath={hero} />
 
       <ContainerComponent className=" mx-auto lg:space-y-32 sm:space-y-20 space-y-10 ">
-        <div className="grid grid-cols-4  lg:grid-cols-12 sm:grid-cols-8 md:grid-cols-8 justify-center  gap-x-5  gap-y-10">
+        <div className="grid grid-cols-4  lg:grid-cols-12 sm:grid-cols-8 md:grid-cols-8 justify-center  gap-x-5 gap-y-5 lg:gap-y-10">
           <div
-            className="hidden lg:block  col-span-full"
+            className="hidden lg:block mb-10 col-span-full"
             style={{ perspective: "1000px" }}
           >
-            <motion.div
-              whileInView={{
-                rotateX: 180,
-                transition: {
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 9,
-                  duration: 0.9,
-                  ease: "easeIn",
-                },
-              }}
-              initial={{ rotateX: 0 }}
-              style={{ transformStyle: "preserve-3d" }}
-              className=" relative h-12  w-full  "
-            >
-              <h1
-                style={{
-                  backfaceVisibility: "hidden",
-                  transform: "translateZ(-24px) rotateX(180deg)",
-                }}
-                className=" font-semibold   sm:text-3xl lg:text-h1 md:text-4xl text-heading text-2xl col-span-full text-center absolute w-full h-full flex justify-center items-center bg-white"
-              >
-                We’re here to Help You
-              </h1>
-              <h1
-                style={{
-                  backfaceVisibility: "hidden",
-                  transformOrigin: "top",
-                  transform: " translateZ(-24px) rotateX(90deg) ",
-                }}
-                className=" font-semibold   sm:text-3xl lg:text-h1 md:text-4xl text-heading text-2xl col-span-full text-center z-10 absolute w-full h-full flex justify-center items-center  bg-white -translate-y-[20px] "
-              >
-                We’re here to Help You
-              </h1>
-              <h1
-                style={{
-                  backfaceVisibility: "hidden",
-                  transformOrigin: "bottom",
-                  transform: " translateZ(-24px) rotateX(-90deg) ",
-                }}
-                className="font-semibold   sm:text-3xl lg:text-h1 md:text-4xl text-heading text-2xl col-span-full text-center absolute w-full h-full  flex justify-center items-center  bg-white translate-y-[20px] "
-              >
-                We’re here to Help You
-              </h1>
-              <h1
-                style={{
-                  backfaceVisibility: "hidden",
-                  transform: "translateZ(16px) ",
-                }}
-                className=" font-semibold   sm:text-3xl lg:text-h1 md:text-4xl text-heading text-2xl col-span-full text-center z-10 absolute w-full  h-full flex justify-center items-center bg-white "
-              >
-                We’re here to Help You
-              </h1>
-            </motion.div>
+            <h1 className=" font-semibold sm:text-3xl lg:text-h1 md:text-4xl text-heading text-2xl col-span-full text-center absolute w-full h-full flex justify-center items-center bg-white">
+              We’re here to Help You
+            </h1>
           </div>
           <h1 className=" lg:hidden col-span-full sm:text-3xl  md:text-4xl  font-semibold    text-heading text-2xl text-center  w-full h-full bg-white">
             We’re here to Help You
           </h1>
-  
+
           <ContactusCard
             title={"Customer Support"}
             email={"Pathway67@gmail.com"}
             phone={"+1 (800) 123-4567"}
             address={"789 Pine Drive, Apt 3B Greenwood, NY 10920 United States"}
           />
-       
+
           <ContactusCard
             title={"Contact Address"}
             email={"Pathway67@gmail.com"}
             phone={"+1 (415) 987-6543"}
             address={"P.O. Box 3456 Ocean City, FL 33121 United States"}
           />
-   
+
           <ContactusCard
             title={" Main Office Address"}
             email={"Pathway67@gmail.com"}

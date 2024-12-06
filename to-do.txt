@@ -1,0 +1,10 @@
+--1. Remove We are here to help animation
+Nanda. --2. Change font on contact us form 
+--3. Padding on blog card
+4. Resize the map icon in CTA
+--5. Change all corner radius to 6px
+ 6. Add favicon
+--7. Change FavText
+Kyaw. --8. Change spacing on events and announcements
+--9. Change form input placeholders to be hind font
+--10. Add ps to form input to space placeholder

@@ -23,9 +23,6 @@ const FormHeader = () => {
           <SecondaryBtn className={"px-4 py-2"} isBorderGreen={true}>
             <Link to={"/login"}>Log In</Link>
           </SecondaryBtn>
-          <PrimaryBtn className={"px-4 py-2"}>
-            <Link to={"/apply-form"}>Apply Now</Link>
-          </PrimaryBtn>
         </div>
       </ContainerComponent>
     </header>

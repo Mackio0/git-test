@@ -33,7 +33,7 @@ const BlogDetailPage = () => {
         </div>
       </section>
       <ContainerComponent className="grid grid-cols-4 lg:grid-cols-12 sm:grid-cols-8  items-center gap-x-5 gap-y-10 sm:gap-y-20 lg:gap-y-section-spacing ">
-        <div className=" rounded-md space-y-5 lg:space-y-6 col-span-full lg:col-start-3  lg:col-span-8  ">
+        <div className=" rounded space-y-5 lg:space-y-6 col-span-full lg:col-start-3  lg:col-span-8  ">
           <img src={event1Img} width="100%" alt="" />
           <div className="space-y-2 lg:space-y-6 ">
             {" "}

@@ -15,7 +15,7 @@ const LatestBlogCard = React.forwardRef (( { img, href, title, author, descripti
       alt="eventPhoto1"
     />
 
-    <div className=" space-y-5 sm:px-1 px-2 flex flex-col flex-grow justify-center ">
+    <div className=" space-y-5 sm:px-3 px-4 flex flex-col flex-grow justify-center ">
       <p className=" text-xl text-para3   font-semibold">
        {title}
       </p>

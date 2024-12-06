@@ -22,7 +22,7 @@ const Header = () => {
     <header className="">
       <ContainerComponent className={"flex justify-between items-center"}>
         <nav className="bg-white border-gray-200 dark:bg-gray-900 w-full">
-          <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto py-2 gap-3">
+          <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto py-2 gap-5">
             <Link to="/">
               <Logo className={"h-12"} />
             </Link>
@@ -76,7 +76,7 @@ const Header = () => {
                 </div>
                 <button
                   type="submit"
-                  className="p-2.5 ms-2 text-sm font-medium text-white bg-primary-500 rounded-md border border-primary-500 hover:border-primary-700 hover:bg-primary-700 focus:ring-2 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-600 dark:focus:ring-primary-800"
+                  className="p-2.5 ms-2 text-sm font-medium text-white bg-primary-500 rounded border border-primary-500 hover:border-primary-700 hover:bg-primary-700 focus:ring-2 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-600 dark:focus:ring-primary-800"
                 >
                   <svg
                     className="w-4 h-4"
@@ -103,7 +103,9 @@ const Header = () => {
                 >
                   <Link to={"/register"}>Sign up</Link>
                 </SecondaryBtn>
-                <PrimaryBtn className={"px-4 py-2 w-full lg:w-auto whitespace-nowrap"}>
+                <PrimaryBtn
+                  className={"px-4 py-2 w-full lg:w-auto whitespace-nowrap"}
+                >
                   <Link to={"/apply-form"}>Apply Now</Link>
                 </PrimaryBtn>
               </div>

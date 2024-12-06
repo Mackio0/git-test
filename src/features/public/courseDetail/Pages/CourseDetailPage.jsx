@@ -1,17 +1,19 @@
 import React from 'react'
 import TopLIstedCourses from '../components/TopLIstedCourses'
-import HeroSection from '../components/HeroSection'
 
 
-import HeroSection2 from '../components/HeroSection2'
+
+
 import ContainerComponent from '../../../../components/ContainerComponent'
+import CourseDetail from '../components/CourseDetail'
+import HeroSection from '../components/HeroSection'
 
 const CourseDetailPage = () => {
   return (
    <>
-   <HeroSection2/>
+   <HeroSection/>
    <ContainerComponent>
-     <HeroSection/>
+     <CourseDetail/>
       <TopLIstedCourses/>
       
       </ContainerComponent>

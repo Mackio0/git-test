@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ChevronDown, Play } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, Play } from "lucide-react";
 
 const courseContent = [
   {
@@ -10,7 +10,8 @@ const courseContent = [
         duration: "30min 10sec",
       },
       {
-        title: "Variables and Data Types: let, const, strings, numbers, booleans",
+        title:
+          "Variables and Data Types: let, const, strings, numbers, booleans",
         duration: "1hr 10sec",
       },
       {
@@ -31,7 +32,8 @@ const courseContent = [
         duration: "1hr 10sec",
       },
       {
-        title: "Scope: Block scope, function scope, global scope, and closures.",
+        title:
+          "Scope: Block scope, function scope, global scope, and closures.",
         duration: "15min 4sec",
       },
     ],
@@ -40,7 +42,8 @@ const courseContent = [
     title: "Arrays and Objects",
     lessons: [
       {
-        title: "Creating arrays, accessing, modifying, and looping through elements.",
+        title:
+          "Creating arrays, accessing, modifying, and looping through elements.",
         duration: "30min 10sec",
       },
       {
@@ -48,7 +51,8 @@ const courseContent = [
         duration: "1hr 10sec",
       },
       {
-        title: "Array and Object Methods: map, filter, reduce, forEach, Object.keys.....",
+        title:
+          "Array and Object Methods: map, filter, reduce, forEach, Object.keys.....",
         duration: "15min 4sec",
       },
     ],
@@ -61,7 +65,8 @@ const courseContent = [
         duration: "30min 10sec",
       },
       {
-        title: "Manipulating the DOM: Adding, removing, and modifying HTML elements.",
+        title:
+          "Manipulating the DOM: Adding, removing, and modifying HTML elements.",
         duration: "1hr 10sec",
       },
       {
@@ -98,7 +103,7 @@ function AccordionItem({ section, isOpen, onToggle }) {
           {section.lessons.map((lesson, lessonIndex) => (
             <div
               key={lessonIndex}
-              className="flex items-center justify-between py-2 hover:bg-gray-50 rounded-md -mx-2 px-2 cursor-pointer"
+              className="flex items-center justify-between py-2 hover:bg-gray-50 rounded -mx-2 px-2 cursor-pointer"
             >
               <div className="flex items-center gap-2">
                 <Play className="h-4 w-4 text-blue-500" />
@@ -117,7 +122,9 @@ export default function Curriculum() {
   const [openSection, setOpenSection] = useState(null);
 
   const toggleSection = (index) => {
-    setOpenSection((prevOpenSection) => (prevOpenSection === index ? null : index));
+    setOpenSection((prevOpenSection) =>
+      prevOpenSection === index ? null : index
+    );
   };
 
   return (
