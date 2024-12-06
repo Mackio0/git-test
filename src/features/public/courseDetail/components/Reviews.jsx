@@ -56,9 +56,9 @@ const Reviews = () => {
                   <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <div className="flex-1 h-2 bg-gray-200 rounded-full">
+              <div className="flex-1 h-2 bg-gray-200 rounded">
                 <div 
-                  className="h-2 bg-yellow-400 rounded-full" 
+                  className="h-2 bg-yellow-400 rounded" 
                   style={{width: `${[75, 60, 45, 30, 15][index]}%`}} 
                 />
               </div>
@@ -73,7 +73,7 @@ const Reviews = () => {
             <img 
               src={review.avatar} 
               alt={review.name}
-              className="w-12 h-12 rounded-full object-cover"
+              className="w-12 h-12 rounded object-cover"
             />
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">

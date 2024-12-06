@@ -32,7 +32,7 @@ const faqContent = [
 
 function AccordionItem({ faq, isOpen, onToggle }) {
   return (
-    <div className="border rounded-lg bg-white shadow-sm mb-4">
+    <div className="border rounded bg-white shadow-sm mb-4">
       <button
         className="w-full px-4 py-2 text-left focus:outline-none"
         onClick={onToggle}
@@ -46,9 +46,7 @@ function AccordionItem({ faq, isOpen, onToggle }) {
           />
         </div>
       </button>
-      {isOpen && (
-        <div className="px-4 py-2 text-gray-600">{faq.details}</div>
-      )}
+      {isOpen && <div className="px-4 py-2 text-gray-600">{faq.details}</div>}
     </div>
   );
 }
@@ -57,7 +55,9 @@ export default function FAQAccordion() {
   const [openSection, setOpenSection] = useState(null);
 
   const toggleSection = (index) => {
-    setOpenSection((prevOpenSection) => (prevOpenSection === index ? null : index));
+    setOpenSection((prevOpenSection) =>
+      prevOpenSection === index ? null : index
+    );
   };
 
   return (

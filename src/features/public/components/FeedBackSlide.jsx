@@ -88,7 +88,7 @@ export default function FeedBackSlide() {
                                         <img
                                             src={testimonial.image}
                                             alt={`${testimonial.name}'s profile picture`}
-                                            className="w-12 h-12 md:w-20 md:h-20 rounded-full object-cover"
+                                            className="w-12 h-12 md:w-20 md:h-20 rounded object-cover"
                                         />
                                         <div className="text-left">
                                             <h3 className="text-[16px] font-semibold mb-1">
@@ -112,31 +112,21 @@ export default function FeedBackSlide() {
             <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-4 mt-6">
                 <button
                     onClick={() => swiperRef.current?.slidePrev()}
-                    className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="bg-white rounded w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     aria-label="Previous slide"
                 >
                     <ChevronLeft className="text-black w-5 h-5" />
                 </button>
                 <button
                     onClick={() => swiperRef.current?.slideNext()}
-                    className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="bg-white rounded w-10 h-10 flex items-center justify-center shadow-md transition-all duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     aria-label="Next slide"
                 >
                     <ChevronRight className="text-black w-5 h-5" />
                 </button>
             </div>
 
-            <style jsx global>{`
-                .swiper {
-                    overflow: hidden;
-                }
-                .swiper-wrapper {
-                    align-items: stretch;
-                }
-                .swiper-slide {
-                    height: auto;
-                }
-            `}</style>
+            
         </div>
     );
 }

@@ -6,7 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Cta = () => {
   return (
-    <div className="bg-cta bg-auto rounded-lg -mt-[180px] h-[290px] lg:h-80 w-full">
+    <div className="bg-cta bg-auto rounded -mt-[180px] h-[290px] lg:h-80 w-full">
       <div className="w-full h-full flex flex-col lg:flex-row justify-around lg:justify-between items-center px-5 lg:px-10">
         <div className="w-full">
           <h1 className="text-[30px] lg:text-h2 font-bold text-heroPara mb-3">
@@ -43,8 +43,8 @@ const Cta = () => {
             Time: 9am to 5pm (Sunday close)
           </p>
           <p className="">
-            <span className="inline-block align-middle me-2">
-              <IoLocationOutline className="size-4" />
+            <span className="inline-block align-middle me-1">
+              <IoLocationOutline className="size-5" />
             </span>
             789 Pine Drive, Apt 3B
           </p>

@@ -127,13 +127,18 @@ const ApplyFormPage = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="dob" className="text-headingPrimary text-sm">Date of birth</label>
+                    <label
+                      htmlFor="dob"
+                      className="text-headingPrimary text-sm"
+                    >
+                      Date of birth
+                    </label>
                     <input
                       type="date"
                       placeholder="Heheh"
                       name="DateOfBirth"
                       {...register("DateOfBirth")}
-                      className="bg-background border ps-3 border-gray-300 h-8 text-heading text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
+                      className="bg-background border ps-3 border-gray-300 h-8 text-heading text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
                     />
                     {errors.DateOfBirth && (
                       <p className=" text-red-500 font-bold italic font-kite text-xs">
@@ -143,7 +148,9 @@ const ApplyFormPage = () => {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label className="text-headingPrimary text-sm">Gender</label>
+                    <label className="text-headingPrimary text-sm">
+                      Gender
+                    </label>
                     <select
                       id="courses"
                       name="Gender"
@@ -191,7 +198,7 @@ const ApplyFormPage = () => {
                       name="Courses"
                       {...register("Courses")}
                       id="courses"
-                      className="bg-background h-8 border ps-3 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
+                      className="bg-background h-8 border ps-3 border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
                       defaultValue={""}
                     >
                       <option value="" disabled>
@@ -223,7 +230,7 @@ const ApplyFormPage = () => {
                       {...register("Message")}
                       id="message"
                       rows="4"
-                      className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
+                      className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-hind"
                       placeholder="Tell us a few words"
                     ></textarea>
                     {errors.Message && (

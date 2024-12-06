@@ -79,7 +79,7 @@ const courseContent = [
 
 function AccordionItem({ section, isOpen, onToggle }) {
   return (
-    <div className="border rounded-lg bg-white shadow-sm mb-4">
+    <div className="border rounded bg-white shadow-sm mb-4">
       <button
         className="w-full px-4 py-2 text-left focus:outline-none"
         onClick={onToggle}

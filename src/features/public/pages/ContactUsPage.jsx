@@ -12,6 +12,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import ContactForm from "../components/ContactForm";
 import ContactusCard from "../components/ContactusCard";
+import HeroSection from "../components/HeroSection";
 
 const ContactUsPage = () => {
   const schema = yup.object({
@@ -29,7 +30,9 @@ const ContactUsPage = () => {
 
   return (
     <section className=" lg:space-y-32  sm:mb-20  mb-10 space-y-10 lg:mb-32">
-      <LandingSection name="Contact us" imgPath={hero} />
+      {/* <LandingSection name="Contact us" imgPath={hero} /> */}
+      <HeroSection image={hero} title={"Contact us"} />
+
 
       <ContainerComponent className=" mx-auto lg:space-y-32 sm:space-y-20 space-y-10 ">
         <div className="grid grid-cols-4  lg:grid-cols-12 sm:grid-cols-8 md:grid-cols-8 justify-center  gap-x-5 gap-y-5 lg:gap-y-10">

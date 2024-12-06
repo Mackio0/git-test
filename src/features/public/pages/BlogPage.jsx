@@ -15,6 +15,7 @@ import hero from "../../../assets/blog/heroSection.png";
 import CardBlog from "../components/CardBlog";
 import { motion } from "framer-motion";
 import LatestBlogCard from "../components/LatestBlogCard";
+import HeroSection from "../components/HeroSection";
 
 const BlogPage = () => {
   const { blogs } = useBlogStore();
@@ -45,15 +46,15 @@ const BlogPage = () => {
   };
 
   return (
-    <main className="flex flex-col gap-10 sm:gap-20 lg:gap-section-spacing sm:mb-20 mb-10 lg:mb-32 ">
-      <LandingSection name="Blog" imgPath={hero} />
+    <main className="flex flex-col gap-10 sm:gap-[20px] lg:gap-[50px] sm:mb-20 mb-10 lg:mb-32 ">
+      <HeroSection image={hero} title={"Blog"} />
       <h2 className="  font-semibold text-heading sm:text-4xl text-2xl self-center ">
         {" "}
         Events and announcements
       </h2>
 
       <ContainerComponent
-        className={"flex flex-col gpa-10 sm:gap-20  lg:gap-section-spacing"}
+        className={"flex flex-col gpa-10 sm:gap-20  "}
       >
         <motion.div
           variants={container}

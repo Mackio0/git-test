@@ -8,6 +8,7 @@ const SupportPage = () => {
   const [query, setQuery] = useState("");
   return (
     <div>
+<<<<<<< HEAD
       <div className="flex-col gap-[12px] min-h-[359px] w-full bg-green-200 flex justify-center items-center ">
         <div>
           <h3 className="text-4xl font-bold text-center align-center items-center font-e">
@@ -26,6 +27,16 @@ const SupportPage = () => {
             className="w-full py-2 pl-9 pr-4 rounded bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent text-sm placeholder:text-gray-500"
           />
         </div>
+=======
+      
+       <div className='flex-col p-3 gap-[12px] min-h-[359px] w-full bg-green-200 flex justify-center items-center '>
+    <div>
+    <h3 className='text-4xl font-bold text-center align-center items-center font-e'>How can we help you?</h3>
+    </div>
+      <div className="relative max-w-md w-full">
+      <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+        <Search className="h-4 w-4 text-gray-400" />
+>>>>>>> 207bb7d6e220b1a4429e07b8b396ed575456a87e
       </div>
       <SupportCard />
       <SupportFaq />

@@ -25,7 +25,7 @@ const FollowUsOn = ({ className, isTextWhite = false }) => {
         <SocialMediaBtn iconSVG={<FaXTwitter />} />
         <SocialMediaBtn iconSVG={<FaLinkedinIn />} />
         <SocialMediaBtn iconSVG={<FaYoutube />} />
-        <SocialMediaBtn iconSVG={<FaTelegramPlane />} />
+        {/* <SocialMediaBtn iconSVG={<FaTelegramPlane />} /> */}
       </div>
     </div>
   );
